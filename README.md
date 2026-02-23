@@ -22,14 +22,14 @@ Then download with HACS, HACS -> Integrations -> Explore & Download Repositories
 Restart HASS.
 
 ### Manually Install
-Drop the ecovacs folder into your custom_components folder. 
+Drop the ecovacs_bumper folder into your custom_components folder. 
 
 Restart HASS.
 
 ### Config
 Example in configuration.yaml:
 ```
-ecovacs:
+ecovacs_bumper:
   username: bumper
   password: bumper
   country: us
@@ -74,7 +74,7 @@ If your debug logs are throwing errors and the errno is '' then my small fork of
 logger:
   logs:
     sleekxmpss: debug
-    custom_components.ecovacs.sucksbumper: debug  # or whatever level you want
+    custom_components.ecovacs_bumper.sucksbumper: debug  # or whatever level you want
 ```
 
 ### To-Do:
