@@ -54,6 +54,7 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
             EcoVacsAPI.md5(config[DOMAIN].get(CONF_PASSWORD)),
             config[DOMAIN].get(CONF_COUNTRY),
             config[DOMAIN].get(CONF_CONTINENT),
+            config[DOMAIN].get(CONF_VERIFY_SSL),
         )
         ecovacs_devices = ecovacs_api.devices()
         _LOGGER.debug("Ecobot devices: %s", ecovacs_devices)

@@ -1,7 +1,7 @@
 import hashlib
+import os
 import time
 import requests
-#import os
 from base64 import b64decode, b64encode
 from collections import OrderedDict
 #from sleekxmppfs.xmlstream import ET
