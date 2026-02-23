@@ -57,7 +57,7 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
             config[DOMAIN].get(CONF_VERIFY_SSL),
         )
         ecovacs_devices = ecovacs_api.devices()
-        _LOGGER.debug("Ecobot devices: %s", ecovacs_devices)
+        LOGGER.debug("Ecobot devices: %s", ecovacs_devices)
 
         SERVER_ADDRESS = None
 
