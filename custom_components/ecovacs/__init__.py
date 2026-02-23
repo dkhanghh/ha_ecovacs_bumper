@@ -58,7 +58,7 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
         ecovacs_devices = ecovacs_api.devices()
         _LOGGER.debug("Ecobot devices: %s", ecovacs_devices)
 
-    SERVER_ADDRESS = None
+        SERVER_ADDRESS = None
 
         devices: list[VacBot] = []
         for device in ecovacs_devices:
